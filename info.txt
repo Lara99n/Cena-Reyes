@@ -1,0 +1,87 @@
+import "./miCss.css";
+import imagen1 from "./img/rey_ataulfo.png";
+import imagen2 from "./img/rey_ervigio.png";
+import imagen3 from "./img/rey_atanagildo.png";
+import incognito from "./img/rey_incognito.png";
+import { useState } from "react";
+
+import "./App.css";
+function App() {
+  /*  const rey = ["Ataulfo", "Ervigio", "Atanagildo"];
+  
+  const cambioTexto = (e) => {
+    if (e.target.innerHTML === "Visto") {
+      e.target.innerHTML = "";
+    } else {
+      e.target.innerHTML = "Visto";
+    }
+  };
+  
+  const cambiarFoto = (e) => {
+    if (e.target.src.includes("incognito")) {
+      e.target.style.visibility = "hidden";
+    } else {
+      e.target.src = incognito;
+    }
+    e.target.parentNode.style.backgroundColor = "white";
+  }; */
+  const [numero1, setNumero1] = useState();
+  const [numero2, setNumero2] = useState();
+  const [resultado, setResultado] = useState();
+  /* 
+  const disminuir = () => {
+    setContador(contador - 1);
+  };
+  const aumentar = () => {
+    setContador(contador + 1);
+  };
+
+  const restablecer = () => {
+    setContador(0);
+  }; */
+
+  const sumar = () => {
+    setResultado(Number(numero1) + Number(numero2));
+  };
+
+  const modificar = (e) => {
+    setNumero1(e.target.value);
+  };
+  const modificar2 = (e) => {
+    setNumero2(e.target.value);
+  };
+
+  return (
+    <div className="caja">
+     {/*  <input type="number" value={numero1} onChange={modificar} /> +
+      <input type="number" value={numero2} onChange={modificar2} /> -
+      <input type="number" value={resultado} readOnly />
+      <button onClick={sumar}>Sumar</button> */}
+      {/*  <button onClick={disminuir}>Disminuir</button>
+      <button onClick={aumentar}>Aumentar</button>
+      <button onClick={restablecer}>Restablecer</button>
+      <h1>{contador}</h1> */}
+      {/*   <div className="caja">
+        <img onClick={cambiarFoto} src={imagen1} />
+
+        <div onClick={cambioTexto} className="nombre">
+          {rey[0]}
+        </div>
+      </div>
+      <div className="caja">
+        <img onClick={cambiarFoto} src={imagen2} />
+        <div onClick={cambioTexto} className="nombre">
+          {rey[1]}
+        </div>
+      </div>
+      <div className="caja">
+        <img onClick={cambiarFoto} src={imagen3} />
+        <div onClick={cambioTexto} className="nombre">
+          {rey[2]}
+        </div>
+      </div> */}
+    </div>
+  );
+}
+
+export default App;
