@@ -52,7 +52,7 @@ const App = () => {
 
   return (
     <div>
-      <h1>Total a pagar: {state} €</h1>a
+      <h1>Total a pagar: {state} €</h1>
       <div className="cajaCentral">
         <Reyes
           rey={reyes[0].nombre}

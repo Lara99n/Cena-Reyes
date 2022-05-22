@@ -4,7 +4,6 @@ import imagen1 from "./img/rey_ataulfo.png";
 import imagen2 from "./img/rey_ervigio.png";
 import imagen3 from "./img/rey_atanagildo.png";
 import incognito from "./img/rey_incognito.png";
-import MiComponente from "./MiComponente";
 
 const App = () => {
   const rey = ["Ataulfo", "Ervigio", "Atanagildo"];
