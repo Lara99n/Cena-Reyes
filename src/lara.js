@@ -32,6 +32,6 @@ const lara = () => {
       vacasComidas: 44,
     },
   ];
-
+  console.log("ok");
   return <div>{resultado1}</div>;
 };
